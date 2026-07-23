@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Temp {
+public class ArrInput {
     public static void main(String[] args) 
     {
         Scanner sc=new Scanner(System.in);
@@ -17,7 +17,13 @@ public class Temp {
         {
             for(int column=0;column<arr[row].length;column++)
             {
-                System.out.print(arr[row][column]+"  ");
+                //System.out.print(arr[row][column]+"  ");
+                System.out.printf("%5d", arr[row][column]); 
+                /*-->%d — placeholder for an integer.
+                  -->5 — minimum field width of 5 characters.
+                  Each number gets right-aligned within 5 spaces,
+                  so single-digit and multi-digit numbers still 
+                  line up in neat columns.*/
             }
             System.out.println();
         }
