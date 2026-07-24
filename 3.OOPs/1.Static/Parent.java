@@ -11,5 +11,6 @@ public class Parent {
         System.out.println("static variable a:"+a);
         System.out.println("static variable b:"+b);
         add();
+        //Now we use this static variable and method in another child class
     }
 }
