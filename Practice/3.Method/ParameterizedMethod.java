@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class ParameterizedMethod {
-    public static int fact(int num) //Actual Argument
+    public static int fact(int num) //Formal Argument
     {
         int fact=1;
         if(num==0)
@@ -20,7 +20,7 @@ public class ParameterizedMethod {
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter a number to find it's Factorial :");
         int num=sc.nextInt();
-        System.out.println("Factorial of "+num+"!= "+fact(num)); //Formal Argument
+        System.out.println("Factorial of "+num+"!= "+fact(num)); //Actual Argument
         sc.close();
     }
     
