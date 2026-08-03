@@ -5,6 +5,7 @@ public class NonStaticBlock {
         System.out.println("Default value of a :"+a);
         a=53;
         System.out.println("After initializing 'a' inside Non-static block 'a'= "+a);
+        System.out.println();
     }
     public static void main(String[] args) {
         NonStaticBlock x=new NonStaticBlock();
