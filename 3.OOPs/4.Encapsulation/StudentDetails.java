@@ -10,26 +10,16 @@ public class StudentDetails {
         System.out.println("DOB: "+dob);
         System.out.println("SapID: "+sapId);
     }
-    // StudentDetails(String name,int roll,String dob,int sapId)  //Constructor
-    // {
-    //     this.name=name;
-    //     this.roll=roll;
-    //     this.dob=dob;
-    //     this.sapId=sapId;
-    // }
-    // StudentDetails()
-    // {
-        
-    // }
-    public String fetch(int pwd)
+    
+    public void fetch(int pwd)
     {
         if(123==pwd)
         {
-            return name;
+            detail();
         }
         else
         {
-            return "Wrong Password!!!";
+            System.out.println("Wrong Password!!!");
         }
     }
     public static void main(String[] args) {

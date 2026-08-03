@@ -5,7 +5,8 @@ public class FatchStudentDetail {
         StudentDetails s=new StudentDetails();
         System.out.print("Enter password to fetch details: ");
         int pwd=sc.nextInt();
-        System.out.println(s.fetch(pwd));
+        s.fetch(pwd);
+        //s.detail();
         sc.close();
     }
     
