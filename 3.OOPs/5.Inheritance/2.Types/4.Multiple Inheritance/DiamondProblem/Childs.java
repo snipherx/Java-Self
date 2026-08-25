@@ -4,6 +4,13 @@ interface Father
     {
         System.out.println("Father works as an Engineer");
     }
+
+    /*
+    In Java, default methods can create the Diamond Problem because they contain an implementation.
+    We override the default method in the child class to remove the ambiguity.
+    Abstract methods do not create this problem because they have no implementation.
+    */
+
 }
 
 interface Mother
