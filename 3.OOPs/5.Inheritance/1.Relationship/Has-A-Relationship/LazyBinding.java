@@ -1,38 +1,39 @@
-class Engine {
+/*
+In Java, this is usually called late binding (also called dynamic binding) 
+— it means the method to be executed is decided at runtime,  not at compile time. 
+This happens with method overriding and polymorphism.
+*/
 
-    void start() {
-        System.out.println("Engine starts");
+
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
     }
 }
 
-class CarEngine extends Engine {
-
+class Dog extends Animal {
     @Override
-    void start() {
-        System.out.println("Car Engine starts");
+    void sound() {
+        System.out.println("Dog barks");
     }
 }
 
-class Car {
-
-    Engine e;   // Car HAS-A Engine
-
-    Car(Engine e) {
-        this.e = e;
-    }
-
-    void startCar() {
-        e.start();   // Late Binding
+class Cat extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Cat meows");
     }
 }
 
 public class LazyBinding {
     public static void main(String[] args) {
+        Animal a; // reference type is Animal
 
-        Engine e = new CarEngine();
+        a = new Dog();
+        a.sound();  // Dog barks — decided at runtime
 
-        Car c = new Car(e);
+        a = new Cat();
+        a.sound();  // Cat meows — decided at runtime
 
-        c.startCar();
     }
 }

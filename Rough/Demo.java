@@ -1,44 +1,23 @@
-interface Bird
+class Doctor
 {
-   void fly();
+    public static void genralCheckup()
+    {
+        System.out.println("Do General Checkup");
+    }
 }
-interface Fish
+
+class Cardiologist extends Doctor
 {
-   void swim();
+    public static void heart()
+    {
+        System.out.println("Can do heart Transplant");
+    }
 }
-class Parrot implements Bird
-{
-   @Override
-   public void fly()
-   {
-      System.out.println("Tatori can fly");
-   }
-}
-class Goldenfish implements Fish
-{
-   @Override
-   public void swim()
-   {
-      System.out.println("Goldi can swim");
-   }
-}
-class Property
-{
-   static void canFly(Bird b)
-   {
-      b.fly();
-   }
-   static void canSwim(Fish f)
-   {
-      f.swim();
-   }
-}
+
 public class Demo {
 
-   public static void main(String[] args) {
-      Parrot tatori=new Parrot();
-      Goldenfish goldi=new Goldenfish();
-      Property.canFly(tatori);
-      Property.canSwim(goldi);
-   }
+    public static void main(String[] args) {
+        Cardiologist.genralCheckup();
+        Cardiologist.heart();
+    }
 }

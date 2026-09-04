@@ -7,10 +7,9 @@ class Engine {
 
 class Car {
 
-    //Engine e = new Engine();   // Car HAS-A Engine
+    Engine e = new Engine();   // Car HAS-A Engine
 
     void drive() {
-        Engine e = new Engine();
         e.start();             // Early binding
         System.out.println("Engine='on' --> Now we can Drive");
     }
