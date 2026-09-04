@@ -1,23 +1,40 @@
-class Doctor
+class Animal
 {
-    public static void genralCheckup()
+    void eat()
     {
-        System.out.println("Do General Checkup");
+        System.out.println("Animal can eat");
+    }
+}
+class Dog extends Animal
+{
+    void eat()
+    {
+        System.out.println("Dog eat bones");
+    }
+    void bark()
+    {
+        System.out.println("Dog can bark");
+    }
+}
+class Cat extends Animal
+{
+    void eat()
+    {
+        System.out.println("Cat eat Fish");
     }
 }
 
-class Cardiologist extends Doctor
-{
-    public static void heart()
-    {
-        System.out.println("Can do heart Transplant");
-    }
-}
-
+/**
+ * Demo
+ */
 public class Demo {
 
     public static void main(String[] args) {
-        Cardiologist.genralCheckup();
-        Cardiologist.heart();
+        Animal a;
+        a=new Dog();
+        a.eat();
+        Dog d=(Dog) a;
+        d.eat();
+        d.bark();
     }
 }
