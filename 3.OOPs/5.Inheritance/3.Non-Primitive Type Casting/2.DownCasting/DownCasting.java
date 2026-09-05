@@ -18,7 +18,7 @@ class Dog extends Animal
 }
 
 /**
- * Upcasting
+ * Downcasting
  */
 public class DownCasting {
 
