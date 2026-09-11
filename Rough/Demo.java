@@ -13,7 +13,7 @@ class Banana implements Tree
 {
     public void seed()
     {
-        System.out.println("Banana donot have seed");
+        System.out.println("Github test");
     }
 }
 
