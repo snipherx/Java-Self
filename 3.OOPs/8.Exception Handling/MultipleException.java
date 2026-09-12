@@ -9,7 +9,7 @@ public class MultipleException {
     {
         if(age<0)
         {
-            throw new IllegalArgumentException("Age cannot be negative"+age);
+            throw new IllegalArgumentException("Age cannot be negative "+age);
         }
         int result=100/age;
         System.out.println("100/age= "+result);
@@ -17,9 +17,9 @@ public class MultipleException {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("--------------------------------------------------");
+        System.out.print("Enter your age: ");
+        int age=sc.nextInt();
         try{
-            System.out.print("Enter your age: ");
-            int age=sc.nextInt();
             checkAge(age);
         }
         catch(IllegalArgumentException i)
@@ -35,6 +35,10 @@ public class MultipleException {
             System.out.println("Exception: "+x.getMessage());
             x.printStackTrace();
             next();
+        }
+        finally
+        {
+            sc.close();
         }
     }
     
