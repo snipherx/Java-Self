@@ -2,6 +2,10 @@
  * Demo
  */
 public class Demo {
+    public String toString()
+    {
+        return a;
+    }
 
     int a=10;
     void read()

@@ -19,7 +19,10 @@ public class ToString {
         System.out.print("Enter your age: ");
         int age=sc.nextInt();
         ToString detail=new ToString(name,age);
-        System.out.println(detail.toString());
+        System.out.println(detail.toString()); 
+        //or we can also write like this
+        System.out.println(detail); //it give detail object address due to toString() of object class
+         //to print state of object we can override this toString() method of Object class
         sc.close();
     }
 
