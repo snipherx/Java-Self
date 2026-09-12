@@ -1,7 +1,4 @@
-/**
- * Demo
- */
-public class Demo {
+public class HashCodeExperiment {
     String firstName;
     String lastName;
     @Override 
@@ -9,7 +6,7 @@ public class Demo {
     {
         return firstName.hashCode()+lastName.hashCode();
     }
-    Demo(String firstName, String lastName)
+    HashCodeExperiment(String firstName, String lastName)
     {
         this.firstName=firstName;
         this.lastName=lastName;
