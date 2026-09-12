@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/3.OOPs/5.Inheritance/1.Relationship/1.Relationship.iml" filepath="$PROJECT_DIR$/3.OOPs/5.Inheritance/1.Relationship/1.Relationship.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3.OOPs/5.Inheritance/2.Types/2.Types.iml" filepath="$PROJECT_DIR$/3.OOPs/5.Inheritance/2.Types/2.Types.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3.OOPs/5.Inheritance/3.Non-Primitive Type Casting/3.Non-Primitive Type Casting.iml" filepath="$PROJECT_DIR$/3.OOPs/5.Inheritance/3.Non-Primitive Type Casting/3.Non-Primitive Type Casting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3.OOPs/3.OOPs.iml" filepath="$PROJECT_DIR$/3.OOPs/3.OOPs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3.OOPs/4.Encapsulation/4.Encapsulation.iml" filepath="$PROJECT_DIR$/3.OOPs/4.Encapsulation/4.Encapsulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3.OOPs/6.Polymorphism/6.Polymorphism.iml" filepath="$PROJECT_DIR$/3.OOPs/6.Polymorphism/6.Polymorphism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3.OOPs/7.Abstraction/7.Abstraction.iml" filepath="$PROJECT_DIR$/3.OOPs/7.Abstraction/7.Abstraction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java-Self.iml" filepath="$PROJECT_DIR$/Java-Self.iml" />
+    </modules>
+  </component>
+</project>
